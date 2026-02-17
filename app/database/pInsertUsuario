@@ -1,0 +1,18 @@
+DELIMITER $$
+	CREATE PROCEDURE insertUsuario(
+		IN pNombre VARCHAR(100),
+		IN pApellidos VARCHAR(100),
+		IN pCorreo VARCHAR(150),
+		IN pIP VARCHAR(45)
+	)
+		BEGIN
+			INSERT INTO usuarios (nombre, apellidos, correo, ip)
+			VALUES (pNombre, pApellidos, pCorreo, pIP);
+            
+			SELECT LAST_INSERT_ID() AS idusuarios;
+		END$$
+DELIMITER ;
+
+DROP PROCEDURE insertUsuario;
+CALL insertUsuario('Juan', 'Duque', 'juan@example.com', '195.35.61.108');
+

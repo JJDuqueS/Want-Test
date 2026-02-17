@@ -1,0 +1,391 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Goldplay';
+  src: url('../public/fonts/Goldplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: 'Goldplay';
+  src: url('/fonts/heebo.thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+/* animando loading */
+#vectorLoading {
+  width: 65px;
+  animation: giro 3s linear infinite;
+  position: absolute;
+}
+
+body {
+  font-family: 'Goldplay', sans-serif;
+}
+
+#credito input::placeholder {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+@keyframes giro {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* usuarios  administracion */
+
+.sizeBtn {
+  width: 13%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 8px;
+  color: white;
+}
+
+.disabled_btn-user {
+  background-color: rgb(207, 207, 207);
+}
+
+.hr {
+  border-bottom: 1px solid #7d82827c;
+}
+
+.btn-user {
+  background-color: rgb(220 38 38);
+}
+
+.container-user {
+  padding: 0 80px;
+}
+
+.section-top {
+  margin-top: 70px;
+}
+
+/* .label {
+  color: rgb(220 38 38);
+  padding-left: 0;
+} */
+
+#dataList tr:nth-child(even) {
+  background: rgb(112 112 112 / 10%);
+}
+
+#frmDataList tbody tr:hover {
+  background-color: #dc262610;
+}
+
+.classInput {
+  text-align: justify;
+  width: 95%;
+  background-color: rgba(255, 255, 255, 0.068);
+  border: none;
+}
+
+.elementRow {
+  height: 2.5rem;
+  font-size: 0.89rem;
+}
+
+/* modalidad ibr */
+.sizeElementRow {
+  width: 90%;
+  height: 2.5rem;
+  font-size: 0.85rem;
+}
+
+.sizeColIcons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 2.5rem;
+}
+
+.sizeElementColICons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.3rem;
+  margin: 0
+}
+
+/* .sizeBtn {
+  width: 13%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+} */
+
+.sizeSection {
+  width: 90%;
+  margin-top: 3rem;
+}
+
+.styleFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.colorTd {
+  color: #dc2626;
+  font-size: 0.7rem;
+}
+
+#ibrListar tr:nth-child(even) {
+  background: #dc262607;
+}
+
+#datosPlan tr:nth-child(even) {
+  background: #dc262607;
+}
+
+.btn {
+  background-color: rgb(220 38 38);
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* .disabled_btn-user {
+  background-color: rgb(207, 207, 207);
+} */
+
+/* configuracion modal */
+
+.header {
+  display: flex;
+}
+
+.modal_container {
+  margin: auto;
+  background-color: #fff;
+  width: 80%;
+  /* max-width: 90%;
+  min-width: 400px; */
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 1.4em;
+  padding-right: 1.4em;
+  border-radius: 0.5em;
+}
+
+.titulo {
+  color: #c41515;
+  font-weight: 700;
+  text-align: center;
+  margin: 10px 0px 20px 0px;
+}
+
+.groupFlex {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.groupLabelInput {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 4px 8px;
+}
+
+.inputs {
+  background-color: white;
+  width: 100%;
+  outline: none;
+  border: 0.1px solid #004f7d50;
+  height: 1.7em;
+  border-radius: 0.3em;
+  box-shadow: 0px 0.1px 0.8px;
+  padding: 0 8px;
+  color: rgba(0, 0, 0, 0.63);
+}
+
+.inputs:focus {
+  border: 1px solid #004f7d9a;
+  box-shadow: 0px 0.1px 0px 0px 2px 0px;
+}
+
+.label {
+  color: #c41515;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.container_buttom {
+  margin: 0.5em 1.em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icono_cerrar {
+  text-align: center;
+  border: 1px solid #00000096;
+  border-radius: 50%;
+  width: 1.7em;
+  height: 1.7em;
+  font-size: 16px;
+  color: #0000007c;
+  font-weight: bold;
+}
+
+.icono_cerrar:hover {
+  color: #c41515;
+  border: 2px solid #c41515;
+}
+
+.buttom {
+  text-align: center;
+  display: block;
+  background-color: #c41515;
+  color: white;
+  border-radius: 5px;
+  width: 120px;
+  padding: 6px 0;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.buttom_Document {
+  text-align: center;
+  display: block;
+  background-color: #c41515;
+  color: white;
+  border-radius: 5px;
+  width: 190px;
+  padding: 8px 18px;
+  margin-right: 8px;
+  margin-top: 9px;
+  font-size: 12px;
+  height: 60px;
+}
+
+.frmDataListUser {
+  height: 60vh;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.frmDataListColorTh {
+  color: rgb(183 28 28);
+}
+
+
+.sizeElementRowUser {
+  width: 98%;
+  height: 2.5rem;
+}
+
+.classFaSignOutAlt {
+  pointer-events: none;
+}
+
+.classDiplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-left: 40px;
+}
+
+.colorSubtitulo {
+  color: #B71C1C;
+}
+
+.classDisplayHiddenParrafo {
+  display: block;
+}
+
+.h1LogoAministracion {
+  color: #077341;
+}
+
+.h3LogoAministracion {
+  color: #349784;
+}
+
+.tituloAdministracion {
+  color: #B71C1C;
+}
+
+/* cabeceras */
+
+.cabecera1{
+  background-image: url("/headers/cabecera1.webp");
+  /* background-size: "cover";
+  background-position: "center" */
+}
+
+.cabecera2{
+  background-image: url("/public/headers/cabecera2.webp");
+  /* background-size: "cover";
+  background-position: "center" */
+}
+
+.cabecera3{
+  background-image: url("/headers/cabecera3.webp");
+  /* background-size: "cover";
+  background-position: "center" */
+}
+
+/* perfiles */
+.radicacion{
+  background-image: url("/perfiles/radicacion.webp");
+  /* background-size: "cover";
+  background-position: "center" */
+}
+.aprobacion{
+  background-image: url("/perfiles/aprobacion.webp");
+  /* background-size: "cover";
+  background-position: "center" */
+}
+.parametrizacion{
+  background-image: url("/perfiles/parametrizacion.webp");
+  /* background-size: "cover";
+  background-position: "center" */
+}
+.administracion{
+  background-image: url("/perfiles/administracion.webp");
+  /* background-size: "cover";
+  background-position: "center" */
+}
+
+/* fondo modal */
+
+.fondoModal{
+  background-image: url("/BackgroundModal.png");
+  
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 2px;
+  opacity: 1;
+  filter: invert(17%) sepia(98%) saturate(7480%) hue-rotate(-5deg) brightness(75%) contrast(120%);
+}
+
+.radiusTopTable{
+  overflow: hidden;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+.radiusBottomTable{
+  border-radius: 0rem 0rem 0.8rem 0.8rem;
+}

@@ -1,0 +1,17 @@
+DELIMITER $$
+	CREATE PROCEDURE queryListUsuarios()
+		BEGIN
+			SELECT 
+				A.idusuarios,
+				A.nombre,
+				A.apellidos,
+				A.correo,
+				A.ip,
+				B.ciudad
+			FROM usuarios AS A
+			JOIN region AS B ON B.ip = A.ip;
+			END$$
+DELIMITER ;
+
+DROP PROCEDURE queryListUsuarios;
+CALL queryListUsuarios();

@@ -1,0 +1,18 @@
+DELIMITER $$
+	CREATE PROCEDURE queryUsuario(IN pID INT)
+		BEGIN
+			SELECT 
+				A.idusuarios,
+				A.nombre,
+				A.apellidos,
+				A.correo,
+				A.ip,
+				B.ciudad
+			FROM usuarios AS A
+			JOIN region AS B ON B.ip = A.ip
+            WHERE A.idusuarios = pID;
+			END$$
+DELIMITER ;
+
+DROP PROCEDURE queryUsuario;
+CALL queryUsuario(2);

@@ -1,0 +1,12 @@
+DELIMITER $$
+	CREATE PROCEDURE queryListCiudad()
+		BEGIN
+			SELECT 
+				ciudad,
+				ip
+			FROM region;
+		END$$
+DELIMITER ;
+
+DROP PROCEDURE queryListCiudad;
+CALL queryListCiudad();
